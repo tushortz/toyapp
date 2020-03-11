@@ -8,5 +8,9 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = render 'layouts/partial/shim'
   %body
-    = yield
+    = render 'layouts/partial/header'
+
+    .container
+      = yield
