@@ -1,2 +1,6 @@
-%h1="Toy App"
-%p="This is home page for the Toy app"
+.center.jumbotron
+  %h1="Toy App"
+  %h2=raw("This is home page for the ") << link_to("Toy app", root_url)
+  =link_to("Sign up now!", "#", { class: "btn btn-lg btn-primary" })
+
+=link_to(image_tag("toy.jpg", alt: "App logo", width: "200"), "#")
